@@ -3,7 +3,6 @@
 import Header from "@/layout/header";
 import Footer from "@/layout/footer";
 import HomeContent from "./main";
-import TopBanner from "@/layout/top-header";
 
 export default function HomeClient() {
   return (

@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 // import { Manrope } from "next/font/google";
 import "./globals.css";
 import { Toaster } from "@/components/ui/toaster";
-import { ProductProvider } from "@/modules/san-pham/components/product-context";
 import { ReduxProvider } from "@/providers/ReduxProvider";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import Head from "next/head";
@@ -59,10 +58,8 @@ export default function RootLayout({
       >
         <GoogleAnalytics gaId="G-ZS4CC8H5VQ" />
         <ReduxProvider>
-          <ProductProvider>
-            {children}
-            <Toaster />
-          </ProductProvider>
+          {children}
+          <Toaster />
         </ReduxProvider>
       </body>
     </html>

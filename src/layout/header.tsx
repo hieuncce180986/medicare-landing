@@ -1,27 +1,22 @@
 "use client";
 
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import Link from "next/link";
 import {
-  User,
   ShoppingBag,
   House,
   Gift,
   Info,
-  ShieldCheck,
   CircleDollarSign,
   NotepadText,
   UserRound,
   FolderPlus,
-  History,
   LogOut,
 } from "lucide-react";
 import { usePathname, useRouter, useSearchParams } from "next/navigation";
 import Image from "next/image";
 import { IMAGES } from "@/utils/image";
-import TopBanner from "./top-header";
 import "@/styles/contact.css";
-import TopBannerMobile from "./top-header-mobile";
 import LoginForm from "./login-form";
 import { ROUTES, SOCIAL_LINKS } from "@/utils/route";
 import Cookies from "js-cookie";
@@ -69,7 +64,6 @@ const Header: React.FC<HeaderProps> = ({
   isLoggedIn = false,
 }) => {
   const pathname = usePathname();
-  const pathnameUrl = useRouter();
   const searchParams = useSearchParams();
   const router = useRouter();
   const dispatch = useDispatch();
@@ -364,8 +358,6 @@ const Header: React.FC<HeaderProps> = ({
 
   return (
     <>
-      <TopBanner />
-      <TopBannerMobile />
       <header className="w-full bg-white py-3">
         <div className="max-w-7xl mx-auto flex items-center justify-between h-16 px-5 lg:px-0">
           <label
@@ -386,19 +378,9 @@ const Header: React.FC<HeaderProps> = ({
 
           {/* Logo */}
           <Link href={ROUTES.HOME} className="flex items-center space-x-2">
-            <Image
-              src={IMAGES.LOGO}
-              alt="In Ảnh Hạ Thu"
-              width={40}
-              height={40}
-            />
+            <Image src={IMAGES.LOGO} alt="Medicare" width={40} height={40} />
             <div className="flex flex-col justify-center items-start">
-              <span className="text-sm lg:text-lg font-bold">
-                IN ẢNH HẠ THU
-              </span>
-              <span className="text-xs font-medium text-[rgb(var(--fifteenth-rgb))]">
-                In ảnh đẹp giá rẻ
-              </span>
+              <span className="text-sm lg:text-lg font-bold">Medicare</span>
             </div>
           </Link>
 
@@ -491,43 +473,8 @@ const Header: React.FC<HeaderProps> = ({
               </div>
             )}
 
-            <Link href={`${ROUTES.CREATE_ORDER}?type=frame`}>
-              <ShoppingBag
-                size={18}
-                strokeWidth={1.5}
-                className="hidden lg:flex cursor-pointer hover:text-[rgb(var(--fifteenth-rgb))]"
-              />
-            </Link>
-
             {/* Divider */}
             <div className="hidden lg:flex h-5 w-px bg-gray-300"></div>
-
-            {/* Cart */}
-            {/* <Link
-              href={SOCIAL_LINKS.DOWNLOAD_IOS || SOCIAL_LINKS.DOWNLOAD_ANDROID}
-              target="_blank"
-              className="group relative flex flex-col lg:flex-row gap-1 lg:gap-2 justify-center items-center text-black hover:text-gray-900 transition-colors lg:pr-0"
-            >
-              <div className="flex flex-row items-center gap-2 ">
-                <Image
-                  src={IMAGES.APP_STORE}
-                  alt={IMAGES.APP_STORE}
-                  width={1000}
-                  height={1000}
-                  className={`w-[18px] h-[18px]`}
-                />
-                <Image
-                  src={IMAGES.GOOGLE_PLAY}
-                  alt={IMAGES.GOOGLE_PLAY}
-                  width={1000}
-                  height={1000}
-                  className={`w-[18px] h-[18px]`}
-                />
-              </div>
-              <span className="text-[16px] font-normal group-hover:text-[rgb(var(--fifteenth-rgb))]">
-                Tải app
-              </span>
-            </Link> */}
 
             <AppDownloadLink />
           </div>

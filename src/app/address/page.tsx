@@ -1,13 +1,13 @@
 "use client";
 
-import AboutClient from "@/modules/gioi-thieu";
+import OrderClient from "@/modules/address";
 import React, { Suspense } from "react";
 
-export default function AboutPage() {
+export default function OrderPage() {
   return (
     <div className="w-full flex flex-col justify-center items-center">
       <Suspense fallback={<div></div>}>
-        <AboutClient />
+        <OrderClient />
       </Suspense>
     </div>
   );
