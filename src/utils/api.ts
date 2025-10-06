@@ -1,44 +1,43 @@
-const BASE_URL = "https://api.farmcode.io.vn/v1";
-// const BASE_URL = 'http://localhost:8000/api/v1';
+const BASE_URL = "http://localhost:8000/api/v1";
 
 const PRODUCT = {
-  GET_ALL: `${BASE_URL}/inanhtructuyen/product/`,
-  GET_PRODUCT_BY_ID: `${BASE_URL}/inanhtructuyen/product`,
+  GET_ALL: `${BASE_URL}`,
+  GET_PRODUCT_BY_ID: `${BASE_URL}`,
 };
 
 const BLOG = {
-  GET_ALL: `${BASE_URL}/inanhtructuyen/blog/`,
-  GET_BLOG_BY_ID: `${BASE_URL}/inanhtructuyen/blog`,
+  GET_ALL: `${BASE_URL}`,
+  GET_BLOG_BY_ID: `${BASE_URL}`,
 };
 
 const SLIDER = {
-  GET_ALL_SLIDER: `${BASE_URL}/ielts-viet/slider`,
+  GET_ALL_SLIDER: `${BASE_URL}`,
 };
 
 const ACCOUNT = {
-  GET_ALL: `${BASE_URL}/inanhtructuyen/account/`,
-  GET_ACCOUNT_BY_ID: `${BASE_URL}/inanhtructuyen/account`,
-  UPDATE: `${BASE_URL}/inanhtructuyen/account/update`,
-  CHANGE_PASSWORD: `${BASE_URL}/inanhtructuyen/account/change-password`,
+  GET_ALL: `${BASE_URL}`,
+  GET_ACCOUNT_BY_ID: `${BASE_URL}`,
+  UPDATE: `${BASE_URL}`,
+  CHANGE_PASSWORD: `${BASE_URL}`,
 };
 
 const AUTH = {
-  LOGIN_MANUAL: `${BASE_URL}/inanhtructuyen/auth/login-email`,
-  LOGIN_MANUAL_PHONE: `${BASE_URL}/inanhtructuyen/auth/login-phone`,
-  LOGIN_WITH_GOOGLE: `${BASE_URL}/inanhtructuyen/auth/login/google`,
+  LOGIN_MANUAL: `${BASE_URL}`,
+  LOGIN_MANUAL_PHONE: `${BASE_URL}`,
+  LOGIN_WITH_GOOGLE: `${BASE_URL}`,
 };
 
 const ORDER = {
-  GET_ALL: `${BASE_URL}/inanhtructuyen/order/`,
-  GET_ALL_ORDER_BY_ID: `${BASE_URL}/inanhtructuyen/order/get-all`,
-  GET_ORDER_BY_ID: `${BASE_URL}/inanhtructuyen/order`,
-  UPDATE_ORDER: `${BASE_URL}/inanhtructuyen/order`,
-  CREATE: `${BASE_URL}/inanhtructuyen/order/`,
-  CREATE_NO_LOGIN: `${BASE_URL}/inanhtructuyen/order/no-login`,
-  CREATE_ALBUM: `${BASE_URL}/inanhtructuyen/order-album/`,
-  CREATE_ALBUM_NO_LOGIN: `${BASE_URL}/inanhtructuyen/order-album/no-login`,
-  DISCOUNT_CHECK: `${BASE_URL}/inanhtructuyen/discount-check`,
-  CREATE_PAYMENT: `https://payment.inanhtructuyen.com/order/create`,
+  GET_ALL: `${BASE_URL}`,
+  GET_ALL_ORDER_BY_ID: `${BASE_URL}`,
+  GET_ORDER_BY_ID: `${BASE_URL}`,
+  UPDATE_ORDER: `${BASE_URL}`,
+  CREATE: `${BASE_URL}`,
+  CREATE_NO_LOGIN: `${BASE_URL}`,
+  CREATE_ALBUM: `${BASE_URL}`,
+  CREATE_ALBUM_NO_LOGIN: `${BASE_URL}`,
+  DISCOUNT_CHECK: `${BASE_URL}`,
+  CREATE_PAYMENT: `${BASE_URL}`,
 };
 
 export const API = {

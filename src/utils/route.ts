@@ -1,5 +1,3 @@
-import { Youtube } from "lucide-react";
-
 export const ROUTES = {
   HOME: "/",
   PRODUCT: "/san-pham",
@@ -21,6 +19,5 @@ export const SOCIAL_LINKS = {
   YOUTUBE: "#",
   EMAIL: "mailto:inanhhathu@gmail.com",
   DOWNLOAD_ANDROID: "#",
-  DOWNLOAD_IOS:
-    "https://apps.apple.com/us/app/in-%E1%BA%A3nh-tr%E1%BB%B1c-tuy%E1%BA%BFn/id6745794485",
+  DOWNLOAD_IOS: "#",
 };
