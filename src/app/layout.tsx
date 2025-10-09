@@ -10,28 +10,25 @@ import Head from "next/head";
 // const font = Plus_Jakarta_Sans({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "In Ảnh Hạ Thu",
-  description:
-    "Chỉnh sửa ảnh miễn phí và in ảnh hạ thu dễ dàng. Tải lên những tấm ảnh yêu thích và bắt đầu chỉnh sửa ngay!",
+  title: "Medicare",
+  description: "Medicare",
   openGraph: {
-    title: "In Ảnh Hạ Thu",
-    description:
-      "Chỉnh sửa ảnh hoàn toàn miễn phí và in ảnh hạ thu dễ dàng. Chọn ảnh yêu thích và tải lên để chỉnh sửa!",
+    title: "Medicare",
+    description: "Medicare",
     url: "https://www.inanhhathu.com/",
     images: [
       {
         url: "https://res.cloudinary.com/farmcode/image/upload/v1757376935/iatt/bg-full_hahqqi.png",
         width: 1200,
         height: 630,
-        alt: "In Ảnh Hạ Thu",
+        alt: "Medicare",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "In Ảnh Hạ Thu",
-    description:
-      "Chỉnh sửa ảnh miễn phí và in ảnh hạ thu dễ dàng. Tải lên ảnh yêu thích và chỉnh sửa ngay!",
+    title: "Medicare",
+    description: "Medicare",
     images: [
       "https://res.cloudinary.com/farmcode/image/upload/v1757376935/iatt/bg-full_hahqqi.png",
     ],
@@ -46,11 +43,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <title>In Ảnh Hạ Thu</title>
-        <meta
-          name="description"
-          content="Chỉnh sửa ảnh miễn phí và in ảnh hạ thu dễ dàng. Tải lên những tấm ảnh yêu thích và bắt đầu chỉnh sửa ngay!"
-        />
+        <title>Medicare</title>
+        <meta name="description" content="Medicare" />
       </Head>
       <body
         // className={font.className}

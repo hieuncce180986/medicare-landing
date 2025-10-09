@@ -1,4 +1,4 @@
-const BASE_URL = "http://localhost:8000/api/v1";
+const BASE_URL = "http://localhost:8000";
 
 const PRODUCT = {
   GET_ALL: `${BASE_URL}`,
@@ -40,6 +40,10 @@ const ORDER = {
   CREATE_PAYMENT: `${BASE_URL}`,
 };
 
+const SOCKET = {
+  GATEWAY: `${BASE_URL}/socket-gateway`,
+};
+
 export const API = {
   PRODUCT,
   BLOG,
@@ -47,4 +51,5 @@ export const API = {
   ACCOUNT,
   AUTH,
   ORDER,
+  SOCKET,
 };
